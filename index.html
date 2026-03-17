@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Green NFlora</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            position: relative;
+            height: 90vh;
+        }
+        .hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0; left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.4);
+        }
+        .hero-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            text-align: center;
+        }
+        .category-card img {
+            height: 180px;
+            object-fit: cover;
+        }
+        .category-card:hover {
+            transform: scale(1.05);
+            transition: 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <img src="logo.jpeg" alt="Logo" width="50" height="50" class="rounded-circle me-2">
+        Green NFlora
+    </a>
+
+    <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link mx-3" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link mx-3" href="contact.php">Contact Us</a></li>
+    </ul>
+  </div>
+</nav>
+
+<section class="hero">
+    <img src="HomeImg/hero-flowers8.jpg" alt="Flowers">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <img src="logo-removebg.png" alt="Green N Flora Logo" style="width:300px; height:auto; margin-bottom:20px;">
+        <h1 class="display-4 fw-bold">Luxury Flowers for Every Occasion</h1>
+        <p class="lead">Celebrate your moments with the finest floral arrangements</p>
+        <a href="products.php?category=birthday" class="btn btn-light btn-lg mt-3">Shop Now</a>
+    </div>
+</section>
+
+<div class="container mt-5">
+    <h2 class="text-success text-center mb-4">Explore Our Categories</h2>
+    <div class="row">
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow category-card">
+                <img src="HomeImg/birthday.jpg" class="card-img-top" alt="Birthday">
+                <div class="card-body text-center">
+                    <h5>Birthday</h5>
+                    <a href="products.php?category=Birthday" class="btn btn-success btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow category-card">
+                <img src="HomeImg/annivesary.png" class="card-img-top" alt="Anniversary">
+                <div class="card-body text-center">
+                    <h5>Anniversary</h5>
+                    <a href="products.php?category=Anniversary" class="btn btn-success btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow category-card">
+                <img src="HomeImg/graduation.jpg" class="card-img-top" alt="Graduation">
+                <div class="card-body text-center">
+                    <h5>Graduation</h5>
+                    <a href="products.php?category=Graduation" class="btn btn-success btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-3 mb-4">
+            <div class="card shadow category-card">
+                <img src="HomeImg/decorationsw.jpg" class="card-img-top" alt="Decorations">
+                <div class="card-body text-center">
+                    <h5>Decorations</h5>
+                    <a href="products.php?category=Decor" class="btn btn-success btn-sm">View</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-success text-white text-center p-4 mt-5">
+    <p>&copy; 2026 Green NFlora | Luxury Floral Boutique</p>
+    <p>Follow us on 
+        <a href="#" class="text-white">Facebook</a> | 
+        <a href="#" class="text-white">Instagram</a>
+    </p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
